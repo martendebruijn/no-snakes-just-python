@@ -29,11 +29,11 @@ python <project_directory>/<project_file.py>
 
 ## Contributing
 
-Since this is a personal project, please don't contribute.
+Since this is a personal project, please don't contribute. However I'm always open for tips and/or improvements!
 
 ## Authors and acknowledgement
 
-- [@martendebruijn](https://github.com/martendebruijn)
+- [@martendebruijn](https://github.com/martendebruijn) - Owner
 
 ## License
 
