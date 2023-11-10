@@ -33,7 +33,7 @@ Since this is a personal project, please don't contribute. However I'm always op
 
 ## Authors and acknowledgement
 
-- [@martendebruijn](https://github.com/martendebruijn) - Owner
+- **[@martendebruijn](https://github.com/martendebruijn)** - Owner
 
 ## License
 
