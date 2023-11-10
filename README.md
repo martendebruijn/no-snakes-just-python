@@ -1,2 +1,42 @@
 # no-snakes-just-python
+
 Some experiments to learn Python🐍🐍
+
+- [no-snakes-just-python](#no-snakes-just-python)
+  - [Get started](#get-started)
+  - [Experiments](#experiments)
+  - [Contributing](#contributing)
+  - [Authors and acknowledgement](#authors-and-acknowledgement)
+  - [License](#license)
+
+## Get started
+
+Clone this repository
+
+```sh
+git clone git@github.com:martendebruijn/types.git
+```
+
+Run a Python project
+
+```sh
+python <project_directory>/<project_file.py>
+```
+
+## Experiments
+
+- [Number guessing game](./number_guessing/number_guessing.py)
+
+## Contributing
+
+Since this is a personal project, please don't contribute.
+
+## Authors and acknowledgement
+
+- [@martendebruijn](https://github.com/martendebruijn)
+
+## License
+
+[MIT](./LICENSE) License
+
+Copyright (c) 2023 [Marten de Bruijn](https://github.com/martendebruijn)
