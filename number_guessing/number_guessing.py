@@ -51,14 +51,16 @@ def change_settings(min: int, max: int) -> tuple[int, int] | None:
     """
     answer = input(
         f"\nThe default is a target number between {min} and {max}, inclusive.\nDo you like to change these? (n/y)\n"
-    )
-    if answer.lower() == "n":
-        minmax = (min, max)
-    elif answer.lower() == "y":
-        minmax = change_min_max()
-    else:
-        print("Please enter y or n\n")
-        change_settings()
+    ).lower()
+    match answer:
+        case "n":
+            minmax = (min, max)
+        case "y":
+            minmax = change_min_max()
+        case "_":
+            print("Please enter y or n\n")
+            change_settings()
+
     return minmax
 
 
@@ -132,13 +134,14 @@ def start_game(options: dict[int, int] = {"min": 1, "max": 100}):
 
 def ask_play_again() -> None:
     """Ask player to play again."""
-    new_game = input("\nDo you want to play again? (n/y)\n")
-    if new_game.lower() == "y":
-        start_game()()
-    elif new_game.lower() == "n":
-        sys.exit()
-    else:
-        ask_play_again()
+    new_game = input("\nDo you want to play again? (n/y)\n").lower()
+    match new_game:
+        case "y":
+            start_game()()
+        case "n":
+            sys.exit()
+        case _:
+            ask_play_again()
 
 
 start_game()()
