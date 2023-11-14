@@ -20,11 +20,6 @@ def ask_for_int(question: str) -> int | None:
     -------
     int
         The inputted integer.
-
-    Raises
-    ------
-    ValueError
-        If inputted value is not an integer.
     """
     answer = input(f"{question}\n")
     try:
@@ -106,11 +101,6 @@ def start_game(options: dict[int, int] = {"min": 1, "max": 100}):
         ----------
         round : int, optional, default: 1
             The current round number
-
-        Raises
-        ------
-        ValueError
-            If inputted value is not an integer.
         """
         print(f"\nRound: {round}")
         guess = input("Please enter your guess:\n")
