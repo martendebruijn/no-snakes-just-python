@@ -14,7 +14,7 @@ Some experiments to learn Python🐍🐍
 Clone this repository
 
 ```sh
-git clone git@github.com:martendebruijn/types.git
+git clone git@github.com:martendebruijn/no-snakes-just-python.git
 ```
 
 Run a Python project
@@ -25,7 +25,7 @@ python <project_directory>/<project_file.py>
 
 ## Experiments
 
-- [Number guessing game](./number_guessing/number_guessing.py)
+- **[Number guessing game](./number_guessing/number_guessing.py)** - Terminal number guessing game.
 
 ## Contributing
 
