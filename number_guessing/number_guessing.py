@@ -38,7 +38,6 @@ def change_min_max():
 
 
 def start_game(options={"min": 1, "max": 100}):
-    print(options["min"])
     min, max = change_settings(min=options["min"], max=options["max"])
     target = random.randint(min, max)
 
