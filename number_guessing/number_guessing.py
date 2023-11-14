@@ -11,12 +11,12 @@ def ask_for_int(question):
         ask_for_int("Please try again.")
 
 
-def change_settings():
+def change_settings(min, max):
     answer = input(
-        "\nThe default is a target number between 1 and 100, inclusive.\nDo you like to change these? (n/y)\n"
+        f"\nThe default is a target number between {min} and {max}, inclusive.\nDo you like to change these? (n/y)\n"
     )
     if answer.lower() == "n":
-        minmax = [1, 100]
+        minmax = [min, max]
     elif answer.lower() == "y":
         minmax = change_min_max()
     else:
@@ -37,8 +37,9 @@ def change_min_max():
         return [min, max]
 
 
-def start_game():
-    min, max = change_settings()
+def start_game(options={"min": 1, "max": 100}):
+    print(options["min"])
+    min, max = change_settings(min=options["min"], max=options["max"])
     target = random.randint(min, max)
 
     def make_guess(round=1):
@@ -72,5 +73,4 @@ def ask_play_again():
         ask_play_again()
 
 
-init = start_game()
-init()
+start_game()()
